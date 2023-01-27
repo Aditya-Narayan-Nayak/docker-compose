@@ -6,3 +6,4 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 git clone https://github.com/django-cms/django-cms-quickstart.git
 cd django-cms-quickstart
+docker compose build web
