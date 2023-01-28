@@ -9,3 +9,10 @@ cd django-cms-quickstart
 docker compose build web
 kill -INT 888
 docker compose up -d database_default
+kill -INT 888
+docker compose run web python manage.py migrate
+kill -INT 888
+docker compose run web python manage.py createsuperuser
+kill -INT 888
+docker compose up -d
+kill -INT 888
